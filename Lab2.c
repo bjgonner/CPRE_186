@@ -25,8 +25,8 @@ int main(int argc, char* argv[]) {
 		printf("Specify how many numbers in each vector as first command line argument\n");
 		return -1;
 	}
-	//if (!(vLen = atoi(argv[1]))) {
-	if (!isdigit(vLen) || vLen <=0){
+	if (!(vLen = atoi(argv[1]))) {
+	//if (!isdigit(vLen) || vLen <=0){
 		printf("Computes the dot product of two arbitrary length vectors of real numbers\n");
 		printf("First command line argument must be an integer indicating vector lengths\n");
 		return -1;
